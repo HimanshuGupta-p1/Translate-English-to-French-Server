@@ -9,6 +9,8 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 
+// POST method to translate english text to french.
+
 app.post('/', async (req, res) => {
     const { text } = req.body;
 
